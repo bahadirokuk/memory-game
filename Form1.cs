@@ -78,8 +78,7 @@ namespace MemoryGame
                     {
                         player2.point++;
                         playerpoint2.Text = "Point = " + player2.point;
-                    }
-                    PlayerChng();
+                    }                  
                     firstClickedBox = null;
                     return;
                 }
@@ -147,6 +146,11 @@ namespace MemoryGame
             playerlabel2.BackColor = Color.Transparent;
             playerlabel1.BackColor = Color.CornflowerBlue;
             CurrentPlayer = player1;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
